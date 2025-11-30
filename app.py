@@ -30,7 +30,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- HEADER ---
-st.title("🎓 Intelligent Student Financial Advisor")
+st.title("My Stock Buddy 🩵")
 st.markdown("### Specialized in explaining complex concepts to beginners.")
 st.markdown("---")
 
@@ -183,3 +183,4 @@ else:
     2. Deposit your **$%s**.
     3. Search for **VOO** (Low Fee) or individual stocks from Step 2.
     """ % budget)
+
