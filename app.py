@@ -4,7 +4,7 @@ import pandas as pd
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="My AI Financial Advisor",
+    page_title="My Stock Buddy 🩵",
     page_icon="📈",
     layout="wide"
 )
