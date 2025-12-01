@@ -169,15 +169,10 @@ else:
     example_stock = df[df['Ticker']=='MSFT']
     if not example_stock.empty:
         msft_price = float(example_stock['Price ($)'].values[0])
-        st.markdown(f"""
-Based on your budget of **${budget:,.2f}**, buying individual shares of all these companies is difficult. 
-For example, one share of Microsoft (MSFT) currently costs **${msft_price:.2f}**.
-        """)
+        st.write(f"Based on your budget of **${budget:,.2f}**, buying individual shares of all these companies is difficult.")
+        st.write(f"For example, one share of Microsoft (MSFT) currently costs **${msft_price:.2f}**.")
     else:
-        st.markdown(f"""
-Based on your budget of **${budget:,.2f}**, buying individual shares of all these companies can be challenging 
-as many of these stocks trade at high prices per share.
-        """)
+        st.write(f"Based on your budget of **${budget:,.2f}**, buying individual shares of all these companies can be challenging as many of these stocks trade at high prices per share.")
     
     st.info(f"💡 **Recommendation:** Use an ETF strategy to own ALL of them at once.")
     
@@ -212,3 +207,4 @@ as many of these stocks trade at high prices per share.
     if st.button("Generate Final PDF Report (Simulation)"):
         st.balloons()
         st.success("Strategy locked in! In a real app, this would download a PDF.")
+
