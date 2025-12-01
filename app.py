@@ -5,7 +5,7 @@ import plotly.express as px
 
 # --- PAGE CONFIGURATION (Clean & Professional Look) ---
 st.set_page_config(
-    page_title="My AI Financial Advisor",
+    page_title="Stock Buddy 🩵",
     page_icon="💰",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -53,7 +53,7 @@ if st.sidebar.button("🔍 Analyze My Profile"):
 
 # --- MAIN APP LOGIC ---
 
-st.title("💰 Intelligent Financial Advisor")
+st.title("Your Stock Buddy 🩵")
 
 # Only show analysis if button is clicked
 if not st.session_state.analysis_started:
@@ -207,5 +207,6 @@ else:
     if st.button("Generate Final PDF Report (Simulation)"):
         st.balloons()
         st.success("Strategy locked in! In a real app, this would download a PDF.")
+
 
 
